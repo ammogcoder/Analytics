@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Plugin.Analytics</id>
+        <version>1.3.0</version>
+        <title>Google Analytics Plugin for Xamarin and Windows</title>
+        <authors>Alex Rainman</authors>
+        <owners>Alex Rainman</owners>
+        <licenseUrl>https://github.com/alexrainman/analytics/blob/master/README.md</licenseUrl>
+        <projectUrl>https://github.com/alexrainman/analytics</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Standard API to track Users, Screens, Events, Timing and Exceptions from PCL.</description>
+        <summary>Google Analytics Plugin for Xamarin and Windows</summary>
+        <releaseNotes>
+        1.3.0
+        [Update] TrackException parameter accepts Exception instead of string
+        [Update] Exceptions message will follow "Type (@class:method) {message}" format 
+        1.2.0
+        [update] Adding event value parameter to TrackEvent
+        1.1.0
+        [Update] Init method extra parameter to set UserID Custom Dimension index.
+        1.0.5
+        [Bug] Uncaught exceptions not working (fixed)
+        1.0.4
+        [Android] Uncaught exceptions not working
+        1.0.3
+        [fix] Adding support to track unhandled exceptions
+        1.0.2
+        [fix] Adding platform specific dependencies
+        1.0.1
+        [enhancement] Adding an extra parameter to Init method to enable/disable reporting uncaught exceptions.
+        </releaseNotes>
+        <tags>google analytics plugin ios android uwp wp81 winstore xamarin forms monotouch monodroid</tags>
+        <dependencies>
+            <group targetFramework="MonoAndroid10">
+	            <dependency id="Xamarin.GooglePlayServices.Analytics " version="29.0.0.2"/>
+	        </group>
+	        <group targetFramework="Xamarin.iOS10">
+	            <dependency id="Xamarin.Google.iOS.Analytics" version="3.14.0.8"/>
+	        </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <!-- PCL -->
+        <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/Plugin.Analytics.Abstractions.dll" />
+        <file src="lib/Plugin.Analytics.dll" target="lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/Plugin.Analytics.dll" />
+
+        <!-- Xamarin.iOS (Unified)-->
+        <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/Xamarin.iOS10/Plugin.Analytics.Abstractions.dll" />
+        <file src="lib/iOS/Plugin.Analytics.dll" target="lib/Xamarin.iOS10/Plugin.Analytics.dll" />
+
+        <!-- Xamarin.Android -->
+        <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/MonoAndroid/Plugin.Analytics.Abstractions.dll" />
+        <file src="lib/Android/Plugin.Analytics.dll" target="lib/MonoAndroid/Plugin.Analytics.dll" />
+    </files>
+</package>

@@ -1,0 +1,16 @@
+packages/
+Analytics/Plugin.Analytics/bin/
+Analytics/Plugin.Analytics/obj/
+Analytics/Plugin.Analytics.Abstractions/bin/
+Analytics/Plugin.Analytics.Abstractions/obj/
+Analytics/Plugin.Analytics.Android/bin/
+Analytics/Plugin.Analytics.Android/obj/
+Analytics/Plugin.Analytics.iOS/bin/
+Analytics/Plugin.Analytics.iOS/obj/
+Demo/bin/
+Demo/obj/
+Droid/bin/
+Droid/obj/
+iOS/bin/
+iOS/obj/
+*.userprefs
