@@ -4,7 +4,7 @@ namespace Plugin.Analytics.Abstractions
 	public enum VerbosityLevel
 	{
 		/// <summary>
-		/// Insights Disabled
+		/// Analytics Disabled
 		/// </summary>
 		AnalyticsOff = 0,
 		/// <summary>

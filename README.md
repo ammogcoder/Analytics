@@ -25,6 +25,41 @@ AnalyticsImplementation.Init(verbosity, "XX-XXXXXXXX-X", localDispatchPeriod, tr
 AnalyticsImplementation.Init(verbosity, "XX-XXXXXXXX-X", localDispatchPeriod, trackUncaughtExceptions, userIdDimensionIndex);
 ```
 
+#### Verbosity
+
+Use this parameter to automatically configure the type of hits you send to Google Analytics.
+You can completelly disable tracking (only crashes will be logged), or disable screens and events, tracking UserID and Timing only.
+
+```
+public enum VerbosityLevel
+{
+	/// <summary>
+	/// Analytics Disabled
+	/// </summary>
+	AnalyticsOff = 0,
+	/// <summary>
+	/// Report user id only
+	/// </summary>
+	UserIdentificationOnly = 1,
+	/// <summary>
+	/// Report user id plus time tracking
+	/// </summary>
+	TimeTracking = 2,
+	/// <summary>
+	/// Report all
+	/// </summary>
+	ReportAll = 3
+}
+```
+
+#### LocalDispatchPeriod
+
+Data collected using the Google Analytics SDK for Android is stored locally before being dispatched on a separate thread to Google Analytics using the dispatch period interval.
+
+#### TrackUncaughtExceptions
+
+If true, unhandled exceptions will be automatically tracked.
+
 #### UserIdDimensionIndex
 
 This parameter is intended to automatically group Screens, Events, Timing, Crashes and Exceptions by UserID.
