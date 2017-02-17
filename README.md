@@ -28,7 +28,8 @@ AnalyticsImplementation.Init(verbosity, "XX-XXXXXXXX-X", localDispatchPeriod, tr
 #### Verbosity
 
 Use this parameter to automatically configure the type of hits you send to Google Analytics.
-You can completelly disable tracking (only crashes will be logged), or disable screens and events, tracking UserID and Timing only.
+
+You can completelly disable tracking (only crashes will be tracked), disable screens and events, or tracking UserID and Timing only.
 
 ```
 public enum VerbosityLevel
