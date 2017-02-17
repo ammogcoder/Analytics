@@ -173,8 +173,11 @@ CrossAnalytics.Current.TrackEvent("Screen Lifecycle", "OnAppearing", 12345678798
 To facilitate reporting, and to match events with screens hits or flows of your app, make sure the parameters answer to these questions:
  
 Category: WHERE it happens?
+
 Action: WHAT happens?
+
 Label: WHICH is the result?
+
 Value: WHEN it happens? (or an aggregate value)
  
 Example:
@@ -186,6 +189,7 @@ CrossAnalytics.Current.TrackEvent(“DashboardPage”, “MetricSelection”, �
 When the event falls into a Global Category, the two first parameters meaning switch:
  
 Category: WHAT happens?
+
 Action: WHERE it happens?
  
 Example:
