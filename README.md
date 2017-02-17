@@ -104,9 +104,9 @@ Now you will see Screens, Events, Timing, Crashes and Exceptions grouped by User
 
 **TrackUser(string userId)**
 
-@param UserID Label identifying the user.
-
 You only need to set UserID on a tracker once. By setting it on the tracker, the ID will be sent with all subsequent hits.
+
+@param UserID Label identifying the user.
 
 ```
 CrossAnalytics.Current.TrackUser("userId");
@@ -119,7 +119,7 @@ In Google Analytics represent content users are viewing within your app. Measuri
 @param ScreenName The name of an application screen.
 
 ```
-CrossAnalytics.Current.TrackScreen("Main Screen"); // Gender is a pre-defined custom dimension
+CrossAnalytics.Current.TrackScreen("Main Screen");
 ```
            
 **TrackEvent(string eventCategory, string eventAction, string eventLabel = "AppEvent", long eventValue = 0)**
@@ -131,7 +131,7 @@ Events are a useful way to collect data about a user's interaction with interact
 @param EventValue is optional. For example, you could use it to provide the event time in seconds.
 
 ```
-CrossAnalytics.Current.TrackEvent("Screen Lifecycle", "OnAppearing");
+CrossAnalytics.Current.TrackEvent("Screen Lifecycle", "OnAppearing", 123456787980898);
 ```
 
 **TrackTime(string timingCategory, string timingName, long timingInterval, string timingLabel = "AppSpeed")**
@@ -142,7 +142,7 @@ User timing data can be found primarily in the App Speed User Timings report.
 
 @params TimingCategory, TimingName and TimingLabel completely upon requirements.
 
-@param TimingInterval the time it takes to load a resource.
+@param TimingInterval The time it takes to load a resource.
 
 ```
 CrossAnalytics.Current.TrackTime("Mapping", "GetTimeTypes", 200);
@@ -156,11 +156,11 @@ Exceptions will appear at "Behavior/Crashes and Exceptions" grouped by app versi
 
 Type (@class:method) {message}
 
-Crashes represent instances where your app encountered unexpected conditions at runtime and are often fatal, causing the app to crash and are sent to Google Analytics automatically by setting the TrackUncaughtExceptions configuration value to true.
-
 ```
 CrossAnalytics.Current.TrackException(ex, false);
 ```
+
+Crashes represent instances where your app encountered unexpected conditions at runtime and are often fatal, causing the app to crash and are sent to Google Analytics automatically by setting the TrackUncaughtExceptions configuration value to true.
 
 Also, for a detailed information, you will find associated events at "Behavior/Events/Overview" under “Crashes” category. This section will provide a full StackTrace in the "Event Label" column.
 
