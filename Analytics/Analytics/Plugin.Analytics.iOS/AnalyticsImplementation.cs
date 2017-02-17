@@ -74,9 +74,9 @@ namespace Plugin.Analytics
 
 		public void TrackUser(string userId)
 		{
-			if (Verbosity != VerbosityLevel.AnalyticsOff)
-			{
-				Tracker.Set(GaiConstants.UserId, userId);
+            if (Verbosity != VerbosityLevel.AnalyticsOff)
+            {
+                Tracker.Set(GaiConstants.UserId, userId);
 			}
 		}
 
@@ -114,9 +114,9 @@ namespace Plugin.Analytics
 
 		public void TrackException(Exception ex, bool isFatal)
 		{
-			if (Verbosity == VerbosityLevel.ReportAll)
-			{
-				SetUserIDDimension();
+            if (Verbosity != VerbosityLevel.AnalyticsOff)
+            {
+                SetUserIDDimension();
 
 				Tracker.Send(DictionaryBuilder.CreateException(ParseException(ex), isFatal).Build());
 			}
@@ -142,10 +142,13 @@ namespace Plugin.Analytics
 
 		public void TrackTransaction(string transactionName, string transactionId, long transactionCount = 1)
 		{
-			SetUserIDDimension();
+            if (Verbosity != VerbosityLevel.AnalyticsOff)
+            {
+                SetUserIDDimension();
 
-			Tracker.Send(DictionaryBuilder.CreateEvent("Transactions", transactionName, transactionId, transactionCount).Build());
-			Gai.SharedInstance.Dispatch();
+                Tracker.Send(DictionaryBuilder.CreateEvent("Transactions", transactionName, transactionId, transactionCount).Build());
+                Gai.SharedInstance.Dispatch();
+            }
 		}
     }
 }

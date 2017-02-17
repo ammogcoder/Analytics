@@ -89,9 +89,9 @@ namespace Plugin.Analytics
 
 		public void TrackUser(string userId)
 		{
-			if (Verbosity != VerbosityLevel.AnalyticsOff)
-			{
-				GATracker.Set("&uid", userId);
+            if (Verbosity != VerbosityLevel.AnalyticsOff)
+            {
+                GATracker.Set("&uid", userId);
 			}
 		}
 
@@ -146,9 +146,9 @@ namespace Plugin.Analytics
 
 		public void TrackException(Exception ex, bool isFatal)
 		{
-			if (Verbosity == VerbosityLevel.ReportAll)
-			{
-				var builder = new HitBuilders.ExceptionBuilder();
+            if (Verbosity != VerbosityLevel.AnalyticsOff)
+            {
+                var builder = new HitBuilders.ExceptionBuilder();
 
 				SetUserIDDimension(builder);
 
@@ -179,17 +179,20 @@ namespace Plugin.Analytics
 
 		public void TrackTransaction(string transactionName, string transactionId, long transactionCount = 1)
 		{
-			var builder = new HitBuilders.EventBuilder();
+            if (Verbosity != VerbosityLevel.AnalyticsOff)
+            {
+                var builder = new HitBuilders.EventBuilder();
 
-			SetUserIDDimension(builder);
+                SetUserIDDimension(builder);
 
-			builder.SetCategory("Transactions");
-			builder.SetAction(transactionName);
-			builder.SetLabel(transactionId);
+                builder.SetCategory("Transactions");
+                builder.SetAction(transactionName);
+                builder.SetLabel(transactionId);
 
-			builder.SetValue(transactionCount);
+                builder.SetValue(transactionCount);
 
-			GATracker.Send(builder.Build());
+                GATracker.Send(builder.Build());
+            }
 		}
 	}
 }

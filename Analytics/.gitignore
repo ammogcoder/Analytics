@@ -1,3 +1,4 @@
+.vs/
 packages/
 Analytics/Plugin.Analytics/bin/
 Analytics/Plugin.Analytics/obj/
@@ -7,6 +8,14 @@ Analytics/Plugin.Analytics.Android/bin/
 Analytics/Plugin.Analytics.Android/obj/
 Analytics/Plugin.Analytics.iOS/bin/
 Analytics/Plugin.Analytics.iOS/obj/
+Analytics/Plugin.Analytics.UWP/bin/
+Analytics/Plugin.Analytics.UWP/obj/
+Analytics/Plugin.Analytics.WindowsPhone8/bin/
+Analytics/Plugin.Analytics.WindowsPhone8/obj/
+Analytics/Plugin.Analytics.WindowsPhone81/bin/
+Analytics/Plugin.Analytics.WindowsPhone81/obj/
+Analytics/Plugin.Analytics.WindowsStore/bin/
+Analytics/Plugin.Analytics.WindowsStore/obj/
 Demo/bin/
 Demo/obj/
 Droid/bin/

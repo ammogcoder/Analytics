@@ -13,8 +13,8 @@
         <summary>Google Analytics Plugin for Xamarin and Windows</summary>
         <releaseNotes>
         1.3.0
-        [Update] TrackException parameter accepts Exception instead of string
-        [Update] Exceptions message will follow "Type (@class:method) {message}" format 
+        [Update] TrackException parameter takes Exception instead of string
+        [Update] Exception message will follow "Type (@class:method) {message}" format 
         1.2.0
         [update] Adding event value parameter to TrackEvent
         1.1.0
@@ -38,6 +38,18 @@
 	        <group targetFramework="Xamarin.iOS10">
 	            <dependency id="Xamarin.Google.iOS.Analytics" version="3.14.0.8"/>
 	        </group>
+	        <group targetFramework="UAP10">
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	        </group>
+	        <group targetFramework="wp8">
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	        </group>
+	        <group targetFramework="wpa81">
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	        </group>
+	        <group targetFramework="win8">
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	        </group>
         </dependencies>
     </metadata>
     <files>
@@ -52,5 +64,21 @@
         <!-- Xamarin.Android -->
         <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/MonoAndroid/Plugin.Analytics.Abstractions.dll" />
         <file src="lib/Android/Plugin.Analytics.dll" target="lib/MonoAndroid/Plugin.Analytics.dll" />
+
+        <!-- UWP -->
+        <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/UAP10/Plugin.Analytics.Abstractions.dll" />
+        <file src="lib/UWP/Plugin.Analytics.dll" target="lib/UAP10/Plugin.Analytics.dll" />
+
+        <!-- WP8 -->
+        <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/wp8/Plugin.Analytics.Abstractions.dll" />
+        <file src="lib/WP8/Plugin.Analytics.dll" target="lib/wp8/Plugin.Analytics.dll" />
+
+        <!-- UP81 -->
+        <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/wpa81/Plugin.Analytics.Abstractions.dll" />
+        <file src="lib/WP81/Plugin.Analytics.dll" target="lib/wpa81/Plugin.Analytics.dll" />
+
+        <!-- WS -->
+        <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/win8/Plugin.Analytics.Abstractions.dll" />
+        <file src="lib/WS/Plugin.Analytics.dll" target="lib/win8/Plugin.Analytics.dll" />
     </files>
 </package>
