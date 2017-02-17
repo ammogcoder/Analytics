@@ -16,20 +16,18 @@
 
 ```
 //Android
-GAXamarinImplementation.Init(verbosity, context, "XX-XXXXXXXX-X", localDispatchPeriod, trackUncaughtExceptions, enableAutoActivityTracking, userIdDimensionIndex);
+AnalyticsImplementation.Init(verbosity, context, "XX-XXXXXXXX-X", localDispatchPeriod, trackUncaughtExceptions, enableAutoActivityTracking, userIdDimensionIndex);
 
 //iOS
-GAXamarinImplementation.Init(verbosity, "XX-XXXXXXXX-X", localDispatchPeriod, trackUncaughtExceptions, userIdDimensionIndex);
+AnalyticsImplementation.Init(verbosity, "XX-XXXXXXXX-X", localDispatchPeriod, trackUncaughtExceptions, userIdDimensionIndex);
 
 //Windows
-GAXamarinImplementation.Init(verbosity, "XX-XXXXXXXX-X", localDispatchPeriod, trackUncaughtExceptions, userIdDimensionIndex);
+AnalyticsImplementation.Init(verbosity, "XX-XXXXXXXX-X", localDispatchPeriod, trackUncaughtExceptions, userIdDimensionIndex);
 ```
 
 #### UserIdDimensionIndex
 
 This parameter is intended to automatically group Screens, Events, Timing, Crashes and Exceptions by UserID.
-
-Tip: use Hit scope.
 
 Requirements:
 
@@ -39,14 +37,13 @@ Requirements:
 
 Steps:
 
-1 - Create a Custom Dimension named UserID and take note of it's index.
+1 - Create a Custom Dimension named UserID and take note of it's index (use Hit scope).
 
 2 - Call Init() passing the Index of the UserID Custom Dimension.
 
 3 - Call TrackUser after initializing the plugin.
 
 ```
-AnalyticsImplementation.Init("XX-XXXXXXXX-X", 20, true, 1);
 CrossAnalytics.Current.TrackUser("userId");
 ```
 
@@ -107,11 +104,13 @@ Now you will see Screens, Events, Timing, Crashes and Exceptions grouped by User
 
 **TrackUser(string userId)**
 
+@param UserID Label identifying the user.
+
+You only need to set UserID on a tracker once. By setting it on the tracker, the ID will be sent with all subsequent hits.
+
 ```
 CrossAnalytics.Current.TrackUser("userId");
 ```
-
-You only need to set User ID on a tracker once. By setting it on the tracker, the ID will be sent with all subsequent hits.
 
 **TrackScreen(string screenName)**
 
@@ -127,7 +126,9 @@ CrossAnalytics.Current.TrackScreen("Main Screen"); // Gender is a pre-defined cu
 
 Events are a useful way to collect data about a user's interaction with interactive components of your app, like button presses or the use of a particular item in a game.
 
-@params EventCategory, EventAction completely upon requirements.
+@params EventCategory, EventAction and EventLabel completely upon requirements.
+
+@param EventValue is optional. For example, you could use it to provide the event time in seconds.
 
 ```
 CrossAnalytics.Current.TrackEvent("Screen Lifecycle", "OnAppearing");
@@ -139,7 +140,7 @@ Measuring user timings provides a native way to measure a period of time in Goog
 
 User timing data can be found primarily in the App Speed User Timings report.
 
-@params TimingCategory, TimingName completely upon requirements.
+@params TimingCategory, TimingName and TimingLabel completely upon requirements.
 
 @param TimingInterval the time it takes to load a resource.
 
@@ -151,22 +152,20 @@ CrossAnalytics.Current.TrackTime("Mapping", "GetTimeTypes", 200);
 
 Crash and exception measurement allows you to measure the number and type of caught and uncaught crashes and exceptions that occur in your app.
 
+Exceptions will appear at "Behavior/Crashes and Exceptions" grouped by app version, in the format:
+
+Type (@class:method) {message}
+
+Crashes represent instances where your app encountered unexpected conditions at runtime and are often fatal, causing the app to crash and are sent to Google Analytics automatically by setting the TrackUncaughtExceptions configuration value to true.
+
 ```
 CrossAnalytics.Current.TrackException(ex, false);
 ```
-
-**Unhandled Exceptions**
-
-Unhandled exceptions will appear at "Behavior/Crashes and Exceptions" grouped by app version, in the format:
-
-Type (@class:method) {message}
 
 Also, for a detailed information, you will find associated events at "Behavior/Events/Overview" under “Crashes” category. This section will provide a full StackTrace in the "Event Label" column.
 
 - Event Action = Type (@class:method) {message} 
 - Event Label = ex.StackTrace
-
-These exceptions represent instances where your app encountered unexpected conditions at runtime and are often fatal, causing the app to crash and are sent to Google Analytics automatically by setting the TrackUncaughtExceptions configuration value to true.
 
 ##### Documentation
 
