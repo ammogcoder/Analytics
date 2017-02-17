@@ -203,6 +203,18 @@ Also, for a detailed information, you will find associated events at "Behavior/E
 - Event Action = Type (@class:method) {message} 
 - Event Label = ex.StackTrace
 
+**TrackTransaction(string transactionName, string transactionId, long transactionCount = 1)**
+
+Special API to track Mobile Transactions. You will find associated events at "Behavior/Events/Overview" under “Transactions” category.
+
+@param TransactionId Contains a single or multiple values separated by comma.
+
+@param TransactionCount Can be used when multiple elements has been processed under the same transaction/http call.
+
+```
+CrossAnalytics.Current.TrackTransaction("ApproveCart", "T-123456X,T-987654Y", 2);
+```
+
 ##### Documentation
 
 https://analytics.google.com
