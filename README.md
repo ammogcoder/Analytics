@@ -170,6 +170,30 @@ Events are a useful way to collect data about a user's interaction with interact
 CrossAnalytics.Current.TrackEvent("Screen Lifecycle", "OnAppearing", 123456787980898);
 ```
 
+To facilitate reporting, and to match events with screens hits or flows of your app, make sure the parameters answer to these questions:
+ 
+Category: WHERE it happens?
+Action: WHAT happens?
+Label: WHICH is the result?
+Value: WHEN it happens? (or an aggregate value)
+ 
+Example:
+
+```
+CrossAnalytics.Current.TrackEvent(“DashboardPage”, “MetricSelection”, “InFlight”);
+```
+
+When the event falls into a Global Category, the two first parameters meaning switch:
+ 
+Category: WHAT happens?
+Action: WHERE it happens?
+ 
+Example:
+
+```
+CrossAnalytics.Current.TrackEvent(“ReleaseSelection”, “DashboardPage_InFlight”, “R2.1”);
+```
+
 **TrackTime(string timingCategory, string timingName, long timingInterval, string timingLabel = "AppSpeed")**
 
 Measuring user timings provides a native way to measure a period of time in Google Analytics. This can be useful to measure resource load times.
