@@ -3,7 +3,7 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
-      "GoogleAnalyticsSDK/1.3.0": {
+      "GoogleAnalyticsSDK/1.3.1": {
         "compile": {
           "lib/uap10.0/GoogleAnalytics.Core.winmd": {},
           "lib/uap10.0/GoogleAnalytics.winmd": {}
@@ -1800,7 +1800,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "GoogleAnalyticsSDK/1.3.0": {
+      "GoogleAnalyticsSDK/1.3.1": {
         "compile": {
           "lib/uap10.0/GoogleAnalytics.Core.winmd": {},
           "lib/uap10.0/GoogleAnalytics.winmd": {}
@@ -3450,7 +3450,7 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "GoogleAnalyticsSDK/1.3.0": {
+      "GoogleAnalyticsSDK/1.3.1": {
         "compile": {
           "lib/uap10.0/GoogleAnalytics.Core.winmd": {},
           "lib/uap10.0/GoogleAnalytics.winmd": {}
@@ -5064,7 +5064,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "GoogleAnalyticsSDK/1.3.0": {
+      "GoogleAnalyticsSDK/1.3.1": {
         "compile": {
           "lib/uap10.0/GoogleAnalytics.Core.winmd": {},
           "lib/uap10.0/GoogleAnalytics.winmd": {}
@@ -6720,7 +6720,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "GoogleAnalyticsSDK/1.3.0": {
+      "GoogleAnalyticsSDK/1.3.1": {
         "compile": {
           "lib/uap10.0/GoogleAnalytics.Core.winmd": {},
           "lib/uap10.0/GoogleAnalytics.winmd": {}
@@ -8334,7 +8334,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "GoogleAnalyticsSDK/1.3.0": {
+      "GoogleAnalyticsSDK/1.3.1": {
         "compile": {
           "lib/uap10.0/GoogleAnalytics.Core.winmd": {},
           "lib/uap10.0/GoogleAnalytics.winmd": {}
@@ -9990,7 +9990,7 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "GoogleAnalyticsSDK/1.3.0": {
+      "GoogleAnalyticsSDK/1.3.1": {
         "compile": {
           "lib/uap10.0/GoogleAnalytics.Core.winmd": {},
           "lib/uap10.0/GoogleAnalytics.winmd": {}
@@ -11605,11 +11605,11 @@
     }
   },
   "libraries": {
-    "GoogleAnalyticsSDK/1.3.0": {
-      "sha512": "U2bDcDQxfYj4Rfs/+IIKnQ0WOUhEmaHlHdpxpf1t7hcygcRGvd355SuBROcAYeTuQ1GQNposGobUGDEWUJul0g==",
+    "GoogleAnalyticsSDK/1.3.1": {
+      "sha512": "khvbyLHXrmJA1ZzrXgCSs9yLHSu9oQ6KVVjc1lvTVPiOYJhoBXL35PfHMHV/bX831QuJU0uFMO1yP8smDRd24w==",
       "type": "package",
       "files": [
-        "GoogleAnalyticsSDK.1.3.0.nupkg.sha512",
+        "GoogleAnalyticsSDK.1.3.1.nupkg.sha512",
         "GoogleAnalyticsSDK.nuspec",
         "content/uap10.0/analytics.xml",
         "content/uap10.0/analytics.xsd",
@@ -14795,7 +14795,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "GoogleAnalyticsSDK >= 1.3.0",
+      "GoogleAnalyticsSDK >= 1.3.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0"
     ],
     "UAP,Version=v10.0": []

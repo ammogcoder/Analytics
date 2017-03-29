@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Plugin.Analytics</id>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
         <title>Google Analytics Plugin for Xamarin and Windows</title>
         <authors>Alex Rainman</authors>
         <owners>Alex Rainman</owners>
@@ -12,6 +12,8 @@
         <description>Standard API to track Users, Screens, Events, Timing and Exceptions from PCL.</description>
         <summary>Google Analytics Plugin for Xamarin and Windows</summary>
         <releaseNotes>
+        1.3.1
+        [Update] Adding support for Android 7, Updating dependencies for iOS and Windows
         1.3.0
         [Update] TrackException parameter takes Exception instead of string
         [Update] Exception message will follow "Type (@class:method) {message}" format 
@@ -33,22 +35,22 @@
         <tags>google analytics plugin ios android uwp wp81 winstore xamarin forms monotouch monodroid</tags>
         <dependencies>
             <group targetFramework="MonoAndroid10">
-	            <dependency id="Xamarin.GooglePlayServices.Analytics " version="29.0.0.2"/>
+	            <dependency id="Xamarin.GooglePlayServices.Analytics" version="32.961.0"/>
 	        </group>
 	        <group targetFramework="Xamarin.iOS10">
-	            <dependency id="Xamarin.Google.iOS.Analytics" version="3.14.0.8"/>
+	            <dependency id="Xamarin.Google.iOS.Analytics" version="3.17.0"/>
 	        </group>
 	        <group targetFramework="UAP10">
-	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.1"/>
 	        </group>
 	        <group targetFramework="wp8">
-	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.1"/>
 	        </group>
 	        <group targetFramework="wpa81">
-	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.1"/>
 	        </group>
 	        <group targetFramework="win8">
-	            <dependency id="GoogleAnalyticsSDK" version="1.3.0"/>
+	            <dependency id="GoogleAnalyticsSDK" version="1.3.1"/>
 	        </group>
         </dependencies>
     </metadata>
@@ -68,6 +70,7 @@
         <!-- UWP -->
         <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/UAP10/Plugin.Analytics.Abstractions.dll" />
         <file src="lib/UWP/Plugin.Analytics.dll" target="lib/UAP10/Plugin.Analytics.dll" />
+        <file src="lib/UWP/Plugin.Analytics.dll" target="lib/UAP10/Plugin.Analytics.pri" />
 
         <!-- WP8 -->
         <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/wp8/Plugin.Analytics.Abstractions.dll" />
@@ -76,9 +79,11 @@
         <!-- UP81 -->
         <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/wpa81/Plugin.Analytics.Abstractions.dll" />
         <file src="lib/WP81/Plugin.Analytics.dll" target="lib/wpa81/Plugin.Analytics.dll" />
+        <file src="lib/WP81/Plugin.Analytics.dll" target="lib/wpa81/Plugin.Analytics.pri" />
 
         <!-- WS -->
         <file src="lib/Plugin.Analytics.Abstractions.dll" target="lib/win8/Plugin.Analytics.Abstractions.dll" />
         <file src="lib/WS/Plugin.Analytics.dll" target="lib/win8/Plugin.Analytics.dll" />
+        <file src="lib/WS/Plugin.Analytics.dll" target="lib/win8/Plugin.Analytics.pri" />
     </files>
 </package>
