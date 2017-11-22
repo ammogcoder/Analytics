@@ -1,0 +1,9 @@
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/bin/iPhone/Release/Plugin.Analytics.XML
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/bin/iPhone/Release/Plugin.Analytics.dll
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/bin/iPhone/Release/Google.Analytics.dll
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/bin/iPhone/Release/Plugin.Analytics.Abstractions.dll
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/bin/iPhone/Release/Plugin.Analytics.Abstractions.pdb
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/obj/Release/optimized/
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/obj/Release/Plugin.Analytics.iOS.csprojResolveAssemblyReference.cache
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/obj/Release/Plugin.Analytics.iOS.csproj.CoreCompileInputs.cache
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.iOS/obj/Release/Plugin.Analytics.dll

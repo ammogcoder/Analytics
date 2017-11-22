@@ -1,0 +1,8 @@
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/bin/Release/netstandard1.4/Plugin.Analytics.Abstractions.deps.json
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/bin/Release/netstandard1.4/Plugin.Analytics.Abstractions.dll
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/bin/Release/netstandard1.4/Plugin.Analytics.Abstractions.pdb
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/obj/Release/netstandard1.4/Plugin.Analytics.Abstractions.csproj.CoreCompileInputs.cache
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/obj/Release/netstandard1.4/Plugin.Analytics.Abstractions.AssemblyInfoInputs.cache
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/obj/Release/netstandard1.4/Plugin.Analytics.Abstractions.AssemblyInfo.cs
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/obj/Release/netstandard1.4/Plugin.Analytics.Abstractions.dll
+/Users/areyes27/Projects/Analytics/Analytics/Analytics/Plugin.Analytics.Abstractions/obj/Release/netstandard1.4/Plugin.Analytics.Abstractions.pdb

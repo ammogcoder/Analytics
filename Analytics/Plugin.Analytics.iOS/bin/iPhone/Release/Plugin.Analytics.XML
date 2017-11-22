@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Analytics</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Analytics.CrossAnalytics">
+            <summary>
+            Cross platform Analytics implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.Analytics.CrossAnalytics.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:Plugin.Analytics.AnalyticsImplementation">
+            <summary>
+            Implementation for Analytics
+            </summary>
+        </member>
+    </members>
+</doc>
