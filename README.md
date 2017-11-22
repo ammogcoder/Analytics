@@ -6,6 +6,7 @@
 
 |Platform|Supported|Version|Component|
 | ------------------- | :-----------: | :-----------: | :------------------: |
+|Net.Standard|Yes|1.4||
 |Xamarin.iOS Unified|Yes|iOS 8.1+|Google Analytics Component for iOS|
 |Xamarin.Android|Yes|API 15+|Google Play Service - Analytics|
 |Windows|Yes|8+|Google Analytics SDK 1.3|
