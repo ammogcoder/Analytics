@@ -1,6 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <AdditionalAndroidResourcePaths />
-  <AdditionalJavaLibraryReferences />
+  <AdditionalAndroidResourcePaths>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Compat/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Core.UI/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Core.Utils/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Fragment/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Media.Compat/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.v4/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Analytics/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Analytics.Impl/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Common/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Iid/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Analytics/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Analytics.Impl/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Base/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Basement/9.6.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Tasks/9.6.1/embedded</AdditionalAndroidResourcePath>
+  </AdditionalAndroidResourcePaths>
+  <AdditionalJavaLibraryReferences>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Compat/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Compat/24.2.1/embedded/libs/internal_impl-24.2.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Core.UI/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Core.UI/24.2.1/embedded/libs/internal_impl-24.2.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Core.Utils/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Core.Utils/24.2.1/embedded/libs/internal_impl-24.2.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Fragment/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Fragment/24.2.1/embedded/libs/internal_impl-24.2.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Media.Compat/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.Media.Compat/24.2.1/embedded/libs/internal_impl-24.2.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Android.Support.v4/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Analytics/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Analytics.Impl/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Common/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.Firebase.Iid/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Analytics/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Analytics.Impl/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Base/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Basement/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/areyes27/.local/share/Xamarin/Xamarin.GooglePlayServices.Tasks/9.6.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+  </AdditionalJavaLibraryReferences>
   <AdditionalNativeLibraryReferences />
 </Paths>
